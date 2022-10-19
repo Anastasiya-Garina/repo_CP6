@@ -1,7 +1,7 @@
 #ДО
-a = int(input("Введите размерность массива (число > 0): "))
+size = int(input("Введите размерность массива (число > 0): "))
 massiv = []
-for i in range(a):
+for i in range(size):
     chiclo = float(input("Введите число: ", ))
     massiv.append(chiclo)
 #print(massiv)
@@ -10,27 +10,27 @@ maxim = max(massiv)
 ind = massiv.index(maxim)
 #print(maxim, ind)
 
-for i in range(ind+1, a):
+for i in range(ind+1, size):
     massiv[i] = 0
     i += 1
 print(massiv)
 
 #ПОСЛЕ
-def f(a): #функция (создание массива)
+def f(size): #функция (создание массива)
     massiv = []
-    for i in range(a):
+    for i in range(size):
         chiclo = float(input("Введите число: ", ))
         massiv.append(chiclo)
     return massiv
 
-a = int(input("Введите размерность массива (число > 0): "))
+size = int(input("Введите размерность массива (число > 0): "))
 
-massiv = f(a)
+massiv = f(size)
 maxim = max(massiv)
 ind = massiv.index(maxim)
 #print(maxim, ind)
 
-for i in range(ind+1, a):
+for i in range(ind+1, size):
     massiv[i] = 0
     i += 1
 print(massiv)
